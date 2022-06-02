@@ -1,0 +1,67 @@
+@charset "UTF-8";
+/* Importation d'une police d'écriture libre de droit  */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  list-style: none;
+}
+
+body {
+  background-color: #16173A;
+}
+body header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body header h1.homepage-title {
+  font-size: 1.5rem;
+}
+body header .navigation-container {
+  border: 1px solid red;
+}
+body header .scrolling-menu i {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  body header .scrolling-menu i {
+    display: flex !important;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  body header .scrolling-menu i {
+    display: flex !important;
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+}
+body header .scrolling-menu .NavCategory {
+  display: none;
+  position: relative;
+}
+body header .scrolling-menu .NavCategory .NavCategory-title {
+  color: red;
+}
+body header .scrolling-menu .NavCategory .college {
+  position: absolute;
+  right: 0;
+  background: black;
+}
+body header .scrolling-menu .NavCategory .college .college-submenu {
+  position: absolute;
+  right: 0;
+  display: none;
+  background: black;
+}
+
+.hidden {
+  display: block !important;
+}/*# sourceMappingURL=style.css.map */

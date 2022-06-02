@@ -1,0 +1,16 @@
+
+/* Importation d'une police d'écriture libre de droit  */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+// reset de notre CSS pour tout les navigateurs
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    list-style: none;
+
+}
