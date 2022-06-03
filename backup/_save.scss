@@ -1,0 +1,156 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $headerLineColor;
+
+    .header-container-title {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+        margin: 10px;
+
+        h1.homepage-title {
+            font-size: 1.2em;
+        }
+
+        .laloupe {
+            font-size: 0.8rem;
+        }
+    }
+    
+
+    .navigation-container {
+
+        .scrolling-menu {
+        
+
+            i {
+                display: none;
+
+                @include tablet-only {
+                    display: flex !important;
+                    margin: 10px;
+                    font-size: 1.5rem;
+                }
+                
+                @include mobile-only {
+                    display: flex !important;
+                    margin: 10px;
+                    font-size: 1.5rem;
+                }                
+            }
+            
+            .NavCategory {
+                
+
+                @include tablet-only {
+                    display: none;
+                    position: relative;  
+                }
+
+
+                @include mobile-only {
+                    display: none;
+                    position: relative;
+                    
+                }
+
+                span.NavCategory-title {
+
+                    
+                    @include mobile-only {
+                        color: white;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        padding: 10px;
+                        text-decoration: underline;
+                        background-color: $burgerColor;
+                        transition: 0.3s;
+                    }  
+                }
+
+                span.NavCategory-title:hover {
+                    cursor: pointer;
+                    transition: 0.3s;
+                    color: yellow;
+                }
+
+                .college {
+                    
+                    
+                    @include mobile-only {
+                        position: absolute;
+                        right: 0;
+                        background: $burgerColor;
+                    }
+    
+                    .college-submenu {
+                        
+                        position: absolute;
+                        right: 0;
+                        display: none;  
+                        background: $burgerColor;
+                        margin: 10px;
+                        
+                        li {
+                            padding: 10px;
+                            margin: 2px;
+                            transition: 0.3s;
+                        }
+
+                        a:hover {
+                            color: yellow;
+                        }
+                
+                    }         
+                }
+            }
+            
+        }   
+       
+    }
+
+    
+}
+
+main {
+
+    @include tablet-only {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-top: 60px;
+    }
+
+    @include mobile-only {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-top: 60px;
+
+    }
+
+    section {
+        @include tablet-only {
+            width: 50%;
+            border: 1px solid yellow;
+            
+        } 
+
+
+        @include mobile-only {
+            width: 50%;
+            
+
+        }
+        
+    }
+
+}
+
+.hidden {
+    display: flex !important;
+    flex-direction: column;
+}

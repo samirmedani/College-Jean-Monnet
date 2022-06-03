@@ -13,55 +13,285 @@
 }
 
 body {
-  background-color: #16173A;
+  background: #121434;
 }
 body header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background: #16173A;
+  border-bottom: 1px solid white;
 }
-body header h1.homepage-title {
-  font-size: 1.5rem;
+@media screen and (max-width: 30000px) {
+  body header {
+    padding: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
-body header .navigation-container {
-  border: 1px solid red;
+@media screen and (max-width: 375px) {
+  body header {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
 }
-body header .scrolling-menu i {
+@media screen and (max-width: 1500px) {
+  body header {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 375px) {
+  body header h1.homepage-title a {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body header h1.homepage-title a {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+body header h1.homepage-title:hover {
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  body nav.navigation-container {
+    position: relative;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body nav.navigation-container {
+    position: relative;
+  }
+}
+@media screen and (max-width: 375px) {
+  body nav.navigation-container .burger-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body nav.navigation-container .burger-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+body nav.navigation-container .burger-container .fa-bars {
   display: none;
 }
 @media screen and (max-width: 375px) {
-  body header .scrolling-menu i {
-    display: flex !important;
-    margin: 10px;
+  body nav.navigation-container .burger-container .fa-bars {
+    display: flex;
+    padding: 10px;
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 768px) {
-  body header .scrolling-menu i {
-    display: flex !important;
-    margin: 10px;
+@media screen and (max-width: 1500px) {
+  body nav.navigation-container .burger-container .fa-bars {
+    display: flex;
+    padding: 10px;
     font-size: 1.5rem;
   }
 }
-body header .scrolling-menu .NavCategory {
-  display: none;
-  position: relative;
+@media screen and (max-width: 375px) {
+  body ul.scrolling-menu {
+    width: 220px;
+    position: absolute;
+    right: 0;
+  }
 }
-body header .scrolling-menu .NavCategory .NavCategory-title {
-  color: red;
+@media screen and (max-width: 1500px) {
+  body ul.scrolling-menu {
+    width: 220px;
+    position: absolute;
+    right: 0;
+  }
 }
-body header .scrolling-menu .NavCategory .college {
-  position: absolute;
-  right: 0;
-  background: black;
+@media screen and (max-width: 30000px) {
+  body ul.scrolling-menu .navCategory {
+    display: flex;
+    gap: 10px;
+  }
 }
-body header .scrolling-menu .NavCategory .college .college-submenu {
-  position: absolute;
-  right: 0;
-  display: none;
-  background: black;
+@media screen and (max-width: 375px) {
+  body ul.scrolling-menu .navCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #6C969D;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body ul.scrolling-menu .navCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    background-color: #6C969D;
+  }
+}
+@media screen and (max-width: 30000px) {
+  body ul.scrolling-menu .arrow-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body ul.scrolling-menu .arrow-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body ul.scrolling-menu .arrow-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+body ul.scrolling-menu .navCategory-title {
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media screen and (max-width: 30000px) {
+  body ul.scrolling-menu .navCategory-title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body ul.scrolling-menu .navCategory-title {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body ul.scrolling-menu .navCategory-title {
+    margin-left: 5px;
+  }
+}
+body ul.scrolling-menu .navCategory-title:hover {
+  color: yellow;
+}
+body ul.scrolling-menu i {
+  cursor: pointer;
+}
+@media screen and (max-width: 30000px) {
+  body ul.scrolling-menu i {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  body ul.scrolling-menu i {
+    margin-left: 5px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body ul.scrolling-menu i {
+    margin-left: 5px;
+  }
+}
+
+@media screen and (max-width: 30000px) {
+  main {
+    display: flex;
+  }
+}
+@media screen and (max-width: 375px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 30000px) {
+  main section {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  main section {
+    width: 100%;
+  }
+}
+main .title-administratives, main .title-pedagogiques {
+  text-decoration: underline;
+  text-align: center;
+}
+@media screen and (max-width: 30000px) {
+  main .container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main .container-box h2, main .container-box span, main .container-box p {
+  color: black;
+}
+main .container-box .box {
+  background-color: #FFFFF2;
+  box-shadow: 0px 0px 15px 6px #000000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 30000px) {
+  main .container-box .box {
+    margin: 30px 10px 10px 10px;
+    max-width: 600px;
+    min-height: 180px;
+  }
+}
+@media screen and (max-width: 375px) {
+  main .container-box .box {
+    max-width: 600px;
+    min-height: 180px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  main .container-box .box {
+    max-width: 600px;
+    min-height: 180px;
+  }
+}
+main .container-box .box .box-top {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+main .container-box .box .box-top img {
+  width: 60px;
+  margin: 3px;
+  border: 1px solid black;
+}
+main .container-box .box .box-top .title-subinfo h2 {
+  margin: 10px 5px 5px 5px;
+  font-size: 1.1rem;
+}
+main .container-box .box .box-top .title-subinfo .subinfo {
+  margin: 10px 5px 5px 5px;
+  font-style: italic;
+  font-size: 0.8rem;
+  font-weight: 550;
+}
+main .container-box .box .box-text {
+  margin: 7px 10px 10px 10px;
 }
 
 .hidden {
-  display: block !important;
+  display: none;
 }/*# sourceMappingURL=style.css.map */
