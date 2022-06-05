@@ -138,8 +138,9 @@ body ul.scrolling-menu .arrow-container {
   body ul.scrolling-menu .arrow-container {
     display: flex;
     align-items: center;
-    gap: 5px;
+    gap: 15px;
     margin-right: 16px;
+    margin-left: 2px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 375px) {
@@ -344,6 +345,37 @@ footer {
   display: none;
 }
 
+@media only screen and (min-width: 1024px) {
+  .liSelected {
+    position: relative;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .liSelected ul {
+    position: absolute;
+    background-color: #6C969D;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .liSelected ul li {
+    margin-left: 10px;
+    transition: 0.3;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+  }
+  .liSelected ul li a {
+    font-size: 1rem;
+    transition: 0.3;
+  }
+  .liSelected ul li a:hover {
+    color: yellow;
+  }
+  .liSelected ul {
+    border: 1px solid black;
+  }
+}
 @media only screen and (min-width: 0px) and (max-width: 375px) {
   .liSelected ul li {
     margin-left: 10px;
@@ -373,6 +405,35 @@ footer {
   }
 }
 
-#sante::before {
-  content: "\f0c1";
+#sante::after {
+  margin-left: 5px;
+  content: "\f08e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+}
+@media only screen and (min-width: 1024px) {
+  #sante::after {
+    font-size: 1rem;
+    position: absolute;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
+  #sante::after {
+    font-size: 0.8rem;
+    position: absolute;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  #sante::after {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .colorDesktopBurger {
+    background-color: #5b7c82;
+  }
+  .colorDesktopBurger .arrow-container {
+    padding-right: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

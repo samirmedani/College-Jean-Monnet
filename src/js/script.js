@@ -7,6 +7,8 @@ myli.forEach((element) => {
     const myChild = element.children[1];
 
     myChild.classList.toggle("hidden");
+
+    this.classList.toggle("colorDesktopBurger");
   });
 });
 
@@ -23,7 +25,3 @@ window.onresize = function () {
     myScrollingMenu.classList.remove("hidden");
   }
 };
-
-function CountVisitors() {
-  let x = 0;
-}
