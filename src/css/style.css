@@ -195,6 +195,8 @@ body ul.scrolling-menu i {
 @media screen and (max-width: 30000px) {
   main {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 @media screen and (max-width: 375px) {
@@ -213,7 +215,7 @@ body ul.scrolling-menu i {
   main section {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     margin-top: 50px;
   }
 }
@@ -245,9 +247,11 @@ main .container-box .box {
   background-color: #FFFFF2;
   box-shadow: 0px 0px 15px 6px #000000;
   border-radius: 10px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  transition: 0.3s;
 }
 @media screen and (max-width: 30000px) {
   main .container-box .box {
@@ -291,7 +295,28 @@ main .container-box .box .box-top .title-subinfo .subinfo {
 main .container-box .box .box-text {
   margin: 7px 10px 10px 10px;
 }
+@media screen and (max-width: 30000px) {
+  main .container-box .box:hover {
+    background-color: lightblue;
+  }
+}
 
+@media screen and (max-width: 30000px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
 .hidden {
   display: none;
 }/*# sourceMappingURL=style.css.map */

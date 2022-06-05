@@ -200,6 +200,9 @@ body {
     main {
         @include desktop-only {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
         }
         @include mobile-only {
             display: flex;
@@ -214,7 +217,7 @@ body {
             @include desktop-only {
                 display: flex;
                 flex-direction: column;
-                width: 50%;
+                width: 100%;
                 margin-top: 50px;
             }
             @include mobile-only {
@@ -242,6 +245,7 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                
             }
 
             h2, span, p {
@@ -252,10 +256,11 @@ body {
                 background-color: #FFFFF2;
                 box-shadow: 0px 0px 15px 6px #000000;
                 border-radius: 10px;
-
+                width: 300px;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                transition: 0.3s;
 
                 @include desktop-only {
                     margin: 30px 10px 10px 10px;   
@@ -303,10 +308,40 @@ body {
                 .box-text {
                     margin: 7px 10px 10px 10px;
                 }
+             
+            }
+            .box:hover {
+                @include desktop-only {
+                    background-color: lightblue;
+                    
+                }
 
             }
         }
 
+    }
+
+    footer {
+        @include desktop-only {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        }
+
+        @include tablet-only {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        }
+
+        @include mobile-only {
+       
+        
+            
+        }
+        
     }
 
 
@@ -314,6 +349,3 @@ body {
 .hidden {
     display: none;
 }
-
-
-
