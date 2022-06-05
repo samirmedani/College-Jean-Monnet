@@ -1,24 +1,19 @@
-$breakpoints: (
-    phone: 375px, 
-    tablet: 1500px, 
-    desktop: 30000px
-
-    );
-
 @mixin mobile-only {
-    @media screen and (max-width: map-get($breakpoints, phone)) {
+    @media only screen and (min-width: 0px) and (max-width: 375px){
         @content
     }
 };
 
 @mixin tablet-only {
-    @media screen and (max-width: map-get($breakpoints, tablet)) {
+    @media only screen and (min-width: 375px) and (max-width: 1024px){
         @content
     }
 };
 
 @mixin desktop-only {
-    @media screen and (max-width: map-get($breakpoints, desktop)) {
+    @media only screen and (min-width: 1024px){
         @content
     }
 };
+
+

@@ -19,7 +19,7 @@ body header {
   background: #16173A;
   border-bottom: 1px solid white;
 }
-@media screen and (max-width: 30000px) {
+@media only screen and (min-width: 1024px) {
   body header {
     padding: 45px;
     display: flex;
@@ -27,27 +27,27 @@ body header {
     align-items: center;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body header {
     padding: 0;
     display: flex;
     justify-content: space-between;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body header {
     padding: 0;
     display: flex;
     justify-content: space-between;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body header h1.homepage-title a {
     font-size: 1.5rem;
     padding: 10px;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body header h1.homepage-title a {
     font-size: 1.5rem;
     padding: 10px;
@@ -56,23 +56,23 @@ body header {
 body header h1.homepage-title:hover {
   cursor: pointer;
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body nav.navigation-container {
     position: relative;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body nav.navigation-container {
     position: relative;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body nav.navigation-container .burger-container {
     display: flex;
     justify-content: flex-end;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body nav.navigation-container .burger-container {
     display: flex;
     justify-content: flex-end;
@@ -81,41 +81,41 @@ body header h1.homepage-title:hover {
 body nav.navigation-container .burger-container .fa-bars {
   display: none;
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body nav.navigation-container .burger-container .fa-bars {
     display: flex;
     padding: 10px;
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body nav.navigation-container .burger-container .fa-bars {
     display: flex;
     padding: 10px;
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body ul.scrolling-menu {
-    width: 220px;
+    width: 290px;
     position: absolute;
     right: 0;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body ul.scrolling-menu {
-    width: 220px;
+    width: 350px;
     position: absolute;
     right: 0;
   }
 }
-@media screen and (max-width: 30000px) {
+@media only screen and (min-width: 1024px) {
   body ul.scrolling-menu .navCategory {
     display: flex;
     gap: 10px;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body ul.scrolling-menu .navCategory {
     display: flex;
     flex-direction: column;
@@ -123,7 +123,7 @@ body nav.navigation-container .burger-container .fa-bars {
     background-color: #6C969D;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body ul.scrolling-menu .navCategory {
     display: flex;
     flex-direction: column;
@@ -131,7 +131,10 @@ body nav.navigation-container .burger-container .fa-bars {
     background-color: #6C969D;
   }
 }
-@media screen and (max-width: 30000px) {
+body ul.scrolling-menu .arrow-container {
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
   body ul.scrolling-menu .arrow-container {
     display: flex;
     align-items: center;
@@ -139,34 +142,42 @@ body nav.navigation-container .burger-container .fa-bars {
     margin-right: 16px;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body ul.scrolling-menu .arrow-container {
     display: flex;
     justify-content: space-between;
+    background-color: #5b7c82;
+    padding: 7px 15px 0px 15px;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body ul.scrolling-menu .arrow-container {
     display: flex;
     justify-content: space-between;
+    background-color: #5b7c82;
+    padding: 7px 15px 0px 15px;
   }
 }
 body ul.scrolling-menu .navCategory-title {
   cursor: pointer;
   transition: 0.3s;
 }
-@media screen and (max-width: 30000px) {
+@media only screen and (min-width: 1024px) {
   body ul.scrolling-menu .navCategory-title {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body ul.scrolling-menu .navCategory-title {
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
     margin-left: 5px;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body ul.scrolling-menu .navCategory-title {
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
     margin-left: 5px;
   }
 }
@@ -176,42 +187,42 @@ body ul.scrolling-menu .navCategory-title:hover {
 body ul.scrolling-menu i {
   cursor: pointer;
 }
-@media screen and (max-width: 30000px) {
+@media only screen and (min-width: 1024px) {
   body ul.scrolling-menu i {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   body ul.scrolling-menu i {
     margin-left: 5px;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   body ul.scrolling-menu i {
     margin-left: 5px;
   }
 }
 
-@media screen and (max-width: 30000px) {
+@media only screen and (min-width: 1024px) {
   main {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   main {
     display: flex;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   main {
     display: flex;
     flex-direction: column;
   }
 }
-@media screen and (max-width: 30000px) {
+@media only screen and (min-width: 1024px) {
   main section {
     display: flex;
     flex-direction: column;
@@ -219,12 +230,12 @@ body ul.scrolling-menu i {
     margin-top: 50px;
   }
 }
-@media screen and (max-width: 375px) {
+@media only screen and (min-width: 0px) and (max-width: 375px) {
   main section {
     width: 100%;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   main section {
     width: 100%;
   }
@@ -232,12 +243,31 @@ body ul.scrolling-menu i {
 main .title-administratives, main .title-pedagogiques {
   text-decoration: underline;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-@media screen and (max-width: 30000px) {
+@media only screen and (min-width: 1024px) {
   main .container-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
+  main .container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  main .container-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
   }
 }
 main .container-box h2, main .container-box span, main .container-box p {
@@ -247,30 +277,11 @@ main .container-box .box {
   background-color: #FFFFF2;
   box-shadow: 0px 0px 15px 6px #000000;
   border-radius: 10px;
-  width: 300px;
+  transition: 0.3s;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: 0.3s;
-}
-@media screen and (max-width: 30000px) {
-  main .container-box .box {
-    margin: 30px 10px 10px 10px;
-    max-width: 600px;
-    min-height: 180px;
-  }
-}
-@media screen and (max-width: 375px) {
-  main .container-box .box {
-    max-width: 600px;
-    min-height: 180px;
-  }
-}
-@media screen and (max-width: 1500px) {
-  main .container-box .box {
-    max-width: 600px;
-    min-height: 180px;
-  }
+  width: 300px;
 }
 main .container-box .box .box-top {
   display: flex;
@@ -295,13 +306,16 @@ main .container-box .box .box-top .title-subinfo .subinfo {
 main .container-box .box .box-text {
   margin: 7px 10px 10px 10px;
 }
-@media screen and (max-width: 30000px) {
+@media only screen and (min-width: 1024px) {
   main .container-box .box:hover {
     background-color: lightblue;
   }
 }
 
-@media screen and (max-width: 30000px) {
+footer {
+  padding-bottom: 50px;
+}
+@media only screen and (min-width: 1024px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -309,7 +323,7 @@ main .container-box .box .box-text {
     margin-top: 50px;
   }
 }
-@media screen and (max-width: 1500px) {
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -317,6 +331,48 @@ main .container-box .box .box-text {
     margin-top: 50px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}
+
 .hidden {
   display: none;
+}
+
+@media only screen and (min-width: 0px) and (max-width: 375px) {
+  .liSelected ul li {
+    margin-left: 10px;
+    transition: 0.3;
+    margin-bottom: 10px;
+  }
+  .liSelected ul li a {
+    font-size: 1rem;
+    transition: 0.3;
+  }
+  .liSelected ul li a:hover {
+    color: yellow;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 1024px) {
+  .liSelected ul li {
+    margin-left: 10px;
+    transition: 0.3;
+    margin-bottom: 10px;
+  }
+  .liSelected ul li a {
+    font-size: 1rem;
+    transition: 0.3;
+  }
+  .liSelected ul li a:hover {
+    color: yellow;
+  }
+}
+
+#sante::before {
+  content: "\f0c1";
 }/*# sourceMappingURL=style.css.map */

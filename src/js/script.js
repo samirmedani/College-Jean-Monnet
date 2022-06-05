@@ -1,15 +1,29 @@
-// // Scrolling menu open and close
-// const OpenNav = document.querySelector(".fa-solid");
-// const NavCategory = document.querySelector(".NavCategory");
+// PC version
+const myli = document.querySelectorAll(".liSelected");
+console.log(myli);
 
-// OpenNav.addEventListener("click", function () {
-//   NavCategory.classList.toggle("hidden");
-// });
+myli.forEach((element) => {
+  element.addEventListener("click", function () {
+    const myChild = element.children[1];
 
-// // College
-// const college = document.querySelector(".college");
-// const collegeSubmenu = document.querySelector(".college-submenu");
+    myChild.classList.toggle("hidden");
+  });
+});
 
-// college.addEventListener("click", function () {
-//   collegeSubmenu.classList.toggle("hidden");
-// });
+const myBurger = document.querySelector(".burger-container");
+const myScrollingMenu = document.querySelector(".scrolling-menu");
+
+myBurger.addEventListener("click", function () {
+  myScrollingMenu.classList.toggle("hidden");
+});
+
+window.onresize = function () {
+  const Mywidth = window.innerWidth;
+  if (Mywidth >= 1474) {
+    myScrollingMenu.classList.remove("hidden");
+  }
+};
+
+function CountVisitors() {
+  let x = 0;
+}

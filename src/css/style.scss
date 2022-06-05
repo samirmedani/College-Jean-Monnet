@@ -97,12 +97,12 @@ body {
        
 
         @include mobile-only {
-            width: 220px;
+            width: 290px;
             position: absolute;
             right: 0;
         }
         @include tablet-only {
-            width: 220px;
+            width: 350px;
             position: absolute;
             right: 0;
         }
@@ -134,6 +134,7 @@ body {
 
 
         .arrow-container {
+            cursor: pointer;
 
             @include desktop-only {
                 display: flex;
@@ -146,10 +147,15 @@ body {
                 display: flex;
                 justify-content: space-between;
                 
+                background-color: #5b7c82;
+                padding: 7px 15px 0px 15px;
+                
             }
             @include tablet-only {
                 display: flex;
                 justify-content: space-between;
+                background-color: #5b7c82;
+                padding: 7px 15px 0px 15px;
                 
             }
         }
@@ -157,16 +163,24 @@ body {
             .navCategory-title {
                 cursor: pointer;
                 transition: 0.3s;
+
+
                 @include desktop-only {
                     font-size: 1.5rem;
                 }
 
 
                 @include mobile-only {
+                    border-bottom: 2px solid white;
+                    margin-bottom: 10px;
                     margin-left: 5px;
+                    
                 }
                 @include tablet-only {
+                    border-bottom: 2px solid white;
+                    margin-bottom: 10px;
                     margin-left: 5px;
+                   
                 }
 
                 
@@ -234,6 +248,8 @@ body {
         .title-administratives, .title-pedagogiques {
             text-decoration: underline;
             text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
             
             
             
@@ -245,7 +261,24 @@ body {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 30px;
                 
+                
+            }
+
+            @include tablet-only {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 30px;
+            }
+
+            @include mobile-only {
+                display: flex;
+                flex-direction: column;
+                
+                justify-content: center;
+                gap: 30px;
             }
 
             h2, span, p {
@@ -256,30 +289,12 @@ body {
                 background-color: #FFFFF2;
                 box-shadow: 0px 0px 15px 6px #000000;
                 border-radius: 10px;
-                width: 300px;
+                transition: 0.3s;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                transition: 0.3s;
-
-                @include desktop-only {
-                    margin: 30px 10px 10px 10px;   
-                    max-width: 600px;
-                    min-height: 180px; 
-                }
-                @include mobile-only {
-                    max-width: 600px;
-                    min-height: 180px;
-                    
-                }
-                @include tablet-only {
-                    max-width: 600px;
-                    min-height: 180px;
-                }
+                width: 300px;
                 
-
-                
-
                 .box-top {
                     display: flex;
                     margin-bottom: 10px;
@@ -322,23 +337,28 @@ body {
     }
 
     footer {
+        padding-bottom: 50px;
+
         @include desktop-only {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
         }
 
         @include tablet-only {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
         }
 
         @include mobile-only {
-       
-        
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
             
         }
         
@@ -347,5 +367,52 @@ body {
 
 
 .hidden {
-    display: none;
+
+   display: none;
+    
+}
+
+
+.liSelected {
+    
+    @include mobile-only {
+        ul li {
+            margin-left: 10px;
+            transition: 0.3;
+            margin-bottom: 10px;
+            
+        }
+        ul li a {
+            font-size: 1rem;
+            transition: 0.3;
+            
+        }
+        ul li a:hover {
+            color: yellow;
+        }
+    }
+
+    @include tablet-only {
+        ul li {
+            margin-left: 10px;
+            transition: 0.3;
+            margin-bottom: 10px;
+            
+        }
+        ul li a {
+            font-size: 1rem;
+            transition: 0.3;
+            
+        }
+        ul li a:hover {
+            color: yellow;
+        }
+
+    }
+    
+    
+}
+
+#sante::before {
+    content: '\f0c1';
 }
